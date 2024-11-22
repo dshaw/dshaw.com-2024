@@ -1,0 +1,80 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  padding-top: 60px
+}
+
+.topbar .icon {
+  float: right;
+  display: block;
+  padding: 7px 7px 0;
+  margin-left: -20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+}
+.topbar .icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.hero-unit {
+  background: #0F0D0A url(../images/dan-shaw.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 420px;
+  background: light-dark(white url(../images/dshaw-logo.png) 0 0 no-repeat, #0F0D0A url(../images/dan-shaw.jpg) 0 0 no-repeat);
+  background-size: light-dark(contain, cover);
+}
+.hero-unit.light {
+  background: white url(../images/dshaw-logo.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.hero-unit h1 {
+  color: white;
+  font-size: 42px;
+}
+.hero-unit p {
+  color: #bfbfbf;
+}
+.hero-unit h1, .hero-unit p {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25), 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#mission { width: 260px; }
+
+@media screen and (max-width: 940px) 
+{
+  .topbar .brand {
+      margin-left: 0px;
+  }
+
+  .container {
+      width: auto;
+  }
+  
+  .hero-unit {
+      margin-left: 20px;
+      margin-right: 20px;
+      height: 220px;
+  }
+  
+  .row {
+      margin-left: 5px;
+      margin-right: 40px;
+  }
+
+  .span-one-third {
+      width: auto;
+  }
+  
+  article {
+      margin-top: 20px;
+  }
+
+  .first-article {
+      margin-top: 0;
+  }
+}
